@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html lang="en-us">
-  <head>
+<head>
     <meta charset="utf-8">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <title>Unity WebGL Player | Gallery_0919</title>
     <link rel="shortcut icon" href="TemplateData/favicon.ico">
     <link rel="stylesheet" href="TemplateData/style.css">
-  </head>
+</head>
   <body>
     <div id="unity-container" class="unity-desktop">
       <canvas id="unity-canvas" width=960 height=600></canvas>
@@ -55,12 +55,12 @@
         updateBannerVisibility();
       }
 
-      var buildUrl = "https://github.com/leebach98/MetaGallery_ACC/blob/main/Build";
-      var loaderUrl = "https://github.com/leebach98/MetaGallery_ACC/blob/main/Build/ACC_Gallery.loader.js";
+      var buildUrl = "Build";
+      var loaderUrl = buildUrl + "/ACC_Gallery.loader.js";
       var config = {
         dataUrl: "https://github.com/leebach98/MetaGallery_ACC/blob/main/Build/ACC_Gallery.data",
-        frameworkUrl: "https://github.com/leebach98/MetaGallery_ACC/blob/main/Build/ACC_Gallery.framework.js",
-        codeUrl: buildUrl + "https://github.com/leebach98/MetaGallery_ACC/blob/main/Build/ACC_Gallery.wasm",
+        frameworkUrl: buildUrl + "/ACC_Gallery.framework.js",
+        codeUrl: buildUrl + "/ACC_Gallery.wasm",
         streamingAssetsUrl: "StreamingAssets",
         companyName: "DefaultCompany",
         productName: "Gallery_0919",
